@@ -2,6 +2,15 @@
   command = "ng build --configuration production --no-server"
   publish = "dist/song_chords_VN/browser"
 
+[build.environment]
+  NODE_VERSION = "20"
+
+[[plugins]]
+  package = "@netlify/angular-runtime"
+
+[plugins.inputs]
+  disable_plugin = true
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
