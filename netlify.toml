@@ -1,8 +1,3 @@
 [build]
-  command = "ng build --configuration production --no-server"
+  command = "ng build --configuration production"
   publish = "dist/song_chords_VN/browser"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
