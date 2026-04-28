@@ -1,5 +1,5 @@
 [build]
-  command = "ng build"
+  command = "ng build --configuration production --no-server"
   publish = "dist/song_chords_VN/browser"
 
 [[redirects]]
